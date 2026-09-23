@@ -2,6 +2,12 @@
 
 **Alcohol Label Verification Prototype by Rahel S. Gizaw**
 
+## Live Demo
+
+**Application:** https://labelguard-ai-k2f2.onrender.com
+
+**Source Code:** https://github.com/RG-2020/ai-alcohol-label-verification
+
 LabelGuard AI is a standalone prototype that scans alcohol label images and compares the extracted text against application information. It is designed to support a human reviewer by identifying clear matches, potential mismatches, and fields that need manual review.
 
 The system uses local OCR and deterministic verification rules so uncertain OCR is not treated as a confirmed compliance decision.
