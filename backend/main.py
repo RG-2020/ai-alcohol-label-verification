@@ -18,11 +18,14 @@ app = FastAPI(
 # I include 5173 and 5174 because Vite can move to 5174 if 5173 is busy.
 app.add_middleware(
     CORSMiddleware,
+
+
     allow_origins=[
         "http://localhost:5173",
         "http://127.0.0.1:5173",
         "http://localhost:5174",
         "http://127.0.0.1:5174",
+        "https://labelguard-ai-k2f2.onrender.com",
     ],
     allow_credentials=True,
     allow_methods=["*"],
