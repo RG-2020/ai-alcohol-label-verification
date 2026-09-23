@@ -2,6 +2,8 @@ import { useCallback, useState } from "react";
 import Cropper, { type Area } from "react-easy-crop";
 import "./App.css";
 
+const API_BASE_URL =
+  import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:8000";
 
 type AppMode =
   | "verify"
@@ -1239,7 +1241,7 @@ function App() {
 
 
         let endpoint =
-          "http://127.0.0.1:8000/verify";
+            `${API_BASE_URL}/verify`;
 
 
         if (
@@ -1282,7 +1284,7 @@ function App() {
 
         } else {
           endpoint =
-            "http://127.0.0.1:8000/scan";
+            `${API_BASE_URL}/scan`
 
           formData.append(
             "use_center_crop",
